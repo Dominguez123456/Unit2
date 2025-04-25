@@ -23,6 +23,7 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnRandomAnimal()
     {
+        // This helps the animals spawn randomly all over the map
         int animalIndex = Random.Range(0, animalPrefabs.Length);
         Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
 

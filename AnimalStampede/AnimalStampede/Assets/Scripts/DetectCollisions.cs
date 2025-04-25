@@ -18,6 +18,7 @@ public class DetectCollisions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // This helps the player recognize that they have hit their target.
         Destroy(gameObject);
         Destroy(other.gameObject);
     }
